@@ -144,3 +144,34 @@ class node_de:
     self.cliente = cliente
     self.previous = previous
     self.next = next
+
+class linked_list_de:
+
+  def __init__(self, head=None):
+    self.had =head
+    self.last = head
+    self.size = 0
+
+  def insertar(self, cliente):
+    if self.size ==0:
+      self.head = node_de(cliente = cliente)
+      self.last = self.head
+    else:
+      new_node = npde_de(cliente = cliente, next= self.head)
+      self.head= new+_node
+    self.soze += 1
+  
+  def imprimir(self):
+    if self.head is None:
+      return
+      node = self.head
+      print(node.cliente.nombre, end = "=>")
+
+c1 = cliente("Estuardo Zapeta", 101)
+c2 = cliente("Marcos Lopez", 103)
+c3 = cliente("Josue Armas", 204)
+
+lista_de = linked_list_de()
+lista_de.insertar(c1)
+lista_de.insertar(c2)
+lista_de.insertar(c3)
