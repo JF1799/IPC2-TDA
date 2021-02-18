@@ -175,3 +175,57 @@ lista_de = linked_list_de()
 lista_de.insertar(c1)
 lista_de.insertar(c2)
 lista_de.insertar(c3)
+
+"""**Pilas**"""
+
+class Pila:
+  def __init__(self):
+    self=[]
+  
+  def apilar()self, cliente):
+      self.pila.append(cliente)
+    
+  def devolver_tamano(self):
+      return len(self.pila)
+
+  def imprimir(self):
+    for elemento in self.pila:
+      print(elemento.nombre, end = "=>")
+
+  def desapilar(self):
+    if self.pila:
+      self.pila.pop()
+
+c1 = cliente("Estuardo Zapeta", 101)
+c2 = cliente("Marcos Lopez", 103)
+c3 = cliente("Josue Armas", 204)
+
+p= Pilar()
+p.apilar(c1)
+p.apilar(c2)
+p.apilar(c3)
+
+"""**COLA**"""
+
+class Cola:
+  def __init__(self):
+    self.cola=[]
+
+  def encolar(self, cliente):
+    self.cola.append(cliente)
+
+  def devolver_tamano(self):
+    return len(self.cola)
+
+  def imprimir(self):
+    for elemento in self.cola:
+      print(elemento)
+
+c1 = cliente("Estuardo Zapeta", 101)
+c2 = cliente("Marcos Lopez", 103)
+c3 = cliente("Josue Armas", 204)
+
+c.Cola()
+c.encolar(c1)
+c.encolar(c2)
+c.encolar(c3)
